@@ -49,16 +49,29 @@
         const messages = [
             { name: "Detaylı Arama", text: "Öğretmenimizle birlikte ilgili detayları öğrenmek veya içerik hakkında sorularınızı sormak isterseniz kısaca telefonda görüşebiliriz. Böylelikle aklınızdaki tüm soruları yanıtlayabiliriz. Sizin için hangi saat uygundur?" },
             { name: "A1 Kursu", text: "Merhabalar! Öncelikle ilginiz için teşekkürler. Daha önce Almanca dersi aldınız mı, yoksa sıfırdan mı başlıyorsunuz?" },
-            { name: "A1 Kursu 2. Mesaj", text: "A1 ile A2 seviyelerini kapsayan programımız 3 Mart’ta başlayacak ve toplam 6 hafta sürecek..." },
+            { name: "A1 Kursu 2. Mesaj", text: "A1 ile A2 seviyelerini kapsayan programımız 3 Mart’ta başlayacak ve toplam 6 hafta sürecek. Haftada 3 gün (Pazartesi, Çarşamba, Cuma) ders, hafta sonu 1 gün de konuşma pratiği yapıyoruz. Ücret 12.000₺, 2 taksit şeklinde ödeyebilirsiniz. Programımıza ek olarak, offline konu anlatımı ve soru çözüm derslerini de sunuyoruz. Ders kayıtlarını istediğiniz zaman izleyerek eksiklerinizi tamamlayabilir veya önden hazırlık yapabilirsiniz.
+" },
             { name: "A2 Kursu", text: "Öncelikle ilginiz için teşekkürler. A1 seviyenizi ne zaman bitirdiğinizi paylaşabilir misiniz? Ve hangi seviyeye kadar devam etme planındasınız?" },
-            { name: "B2 telc", text: "B2 sınav hazırlık kursumuza ilginiz için teşekkür ederiz. Acaba sınav tarihini netleştirdiniz mi?" },
-            { name: "B2 tarih Almadım", text: "25 Şubatta başlayacak ve İlk hafta B seviyesi grameri hızlıca işliyoruz..." },
-            { name: "Tarih aldım b2", text: "Hiç sorun değil. Zaman yaptığımız hazırlık sınava nerede girerseniz girin geçmenize uyarlanmış kurs seklindedir..." },
-            { name: "Klüpler bilgi", text: "Öncelikle ilginiz için teşekkürler. Almanca seviyeniz nedir acaba?" },
-            { name: "Kulüpler A1 A2", text: "Başlangıç seviyesi konuşma kulüplerimiz her pazar 17:00-18:30 arasında yapılıyor ve aylık ücreti 2000₺." },
-            { name: "Kulüpler B1 B2", text: "Orta seviye konuşma kulüplerimiz cumartesi günleri 17:00-18:30 arasında yapılıyor ve aylık ücreti 2000₺." },
-            { name: "Videolar Kulüp", text: "https://youtu.be/odMteKxaHTs?si=CWv20BS8RDzIBzLj" },
-            { name: "B2 Video", text: "https://youtu.be/DraxVYcScog?si=MOHdROZRG044iz0Q ve https://youtu.be/hMXXLIySqZM?si=_Q1h4G3zrQTQYUhw" }
+              { name: "A2 Kursu 2.Mesaj", text: "24 Şubat’ta başlayacak 6 haftalık A2 kursumuz için kampanyalı fiyat 7.000₺ (2 taksit seçeneği bulunuyor). Ayrıca offline konu anlatım ve soru çözüm videolarını istediğiniz vakit izleyerek ilerlemenizi destekleyebilirsiniz. Pazartesi Çarşamba ve Cuma günleri online canlı dersler hafta sonları ise konusma dersleri olmaktadır. " },
+            { name: "B2 telc", text: "B2 sınav hazırlık kursumuza ilginiz için teşekkür ederiz. Acaba sınav tarihini netleştirdiniz mi? Kursumuz, sınav takvimine uyacak şekilde planlanıyor ve kursu tamamladıktan sonra kurumumuz rehberliğinde telc sınava girebiliyorsunuz. Kurs katılımcıları kesin kontenjan ve indirim haklarından yararlanabiliyor
+?" },
+            { name: "B2 tarih Almadım", text: "25 Şubatta başlayacak ve İlk hafta B seviyesi grameri hızlıca işliyoruz, ardından 3 hafta boyunca soru çözüm oturumları düzenliyoruz. Salı ve Perşembe günleri sınavın diğer bölümlerine odaklanıyoruz ve Cumartesi günlerini konuşma pratiklerine ayırıyoruz. Pazar günleri hibrit deneme sınavları yapıp, telc değerlendirme eğitmenimiz eşliğinde kapsamlı değerlendirmeye tabi tutuyoruz. Ücretimiz 13bin₺ dir. 2 Taksitle ödeyebilirsniz. 
+" },
+            { name: "Tarih aldım b2", text: "Hiç sorun değil. Zaman yaptığımız hazırlık sınava nerede girerseniz girin geçmenize uyarlanmış kurs seklindedir. Programımız 25 Şubatta başlayacak  ve İlk hafta B seviyesi grameri hızlıca işliyoruz, ardından 3 hafta boyunca soru çözüm oturumları düzenliyoruz. Salı ve Perşembe günleriyse sınavın diğer bölümlerine odaklanıyoruz ve Cumartesi günlerini konuşma pratiklerine ayırıyoruz. Pazar günleri hibrit deneme sınavları yapıp, telc değerlendirme eğitmenimiz eşliğinde kapsamlı değerlendirmeye tabi tutuyoruz.
+" },
+            { name: "Klüpler bilgi", text: "Öncelikle ilginiz için teşekkürler. Almanca seviyeniz nedir acaba? Başlangıç ve orta seviye konuşma dersleri sunuyoruz. Size en uygun programı önerebilmemiz için Almanca seviyeniz ile ilgili bilgi alabilir miyiz?
+" },
+            { name: "Kulüpler A1 A2", text: "Başlangıç seviyesi konuşma kulüplerimiz her pazar 17:00-18:30 arasında yapılıyor ve aylık ücreti 2000₺. Pakette A1-A2 konu anlatım videolarımız da bulunuyor; bu videolarla ek destek alırken kulüp etkinliklerinde bol bol pratik yapabilirsiniz." },
+            { name: "Kulüpler B1 B2", text: "Orta seviye konuşma kulüplerimiz cumartesi günleri 17:00-18:30 arasında yapılıyor ve aylık ücreti 2000₺. Ayrıca, B1-B2 konu anlatım videolarımız da pakete dahil. Bu videolarla bilgilerinizi pekiştirip kulüp seanslarında konuşma pratiğiyle ilerleyebilirsiniz
+" },
+            { name: "Videolar Kulüp", text: "https://youtu.be/odMteKxaHTs?si=CWv20BS8RDzIBzLj
+
+bu videolardan da ders içeriklerimiz hakkında fikir edinebilirsiniz 
+" },
+            { name: "B2 Video", text: "Video bu videolardan da ders içeriklerimiz hakkında fikir edinebilirsiniz.  
+
+https://youtu.be/DraxVYcScog?si=MOHdROZRG044iz0Q  ve https://youtu.be/hMXXLIySqZM?si=_Q1h4G3zrQTQYUhw
+" }
         ];
 
         const messagesContainer = document.getElementById('messages');
