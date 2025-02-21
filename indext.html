@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesaj Kopyalama Paneli</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .message-box {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Mesaj Kopyalama Paneli</h2>
+        <div id="messages"></div>
+    </div>
+
+    <script>
+        const messages = [
+            { name: "Detaylı Arama", text: "Öğretmenimizle birlikte ilgili detayları öğrenmek veya içerik hakkında sorularınızı sormak isterseniz kısaca telefonda görüşebiliriz. Böylelikle aklınızdaki tüm soruları yanıtlayabiliriz. Sizin için hangi saat uygundur?" },
+            { name: "A1 Kursu", text: "Merhabalar! Öncelikle ilginiz için teşekkürler. Daha önce Almanca dersi aldınız mı, yoksa sıfırdan mı başlıyorsunuz?" },
+            { name: "A1 Kursu 2. Mesaj", text: "A1 ile A2 seviyelerini kapsayan programımız 3 Mart’ta başlayacak ve toplam 6 hafta sürecek..." },
+            { name: "A2 Kursu", text: "Öncelikle ilginiz için teşekkürler. A1 seviyenizi ne zaman bitirdiğinizi paylaşabilir misiniz? Ve hangi seviyeye kadar devam etme planındasınız?" },
+            { name: "B2 telc", text: "B2 sınav hazırlık kursumuza ilginiz için teşekkür ederiz. Acaba sınav tarihini netleştirdiniz mi?" },
+            { name: "B2 tarih Almadım", text: "25 Şubatta başlayacak ve İlk hafta B seviyesi grameri hızlıca işliyoruz..." },
+            { name: "Tarih aldım b2", text: "Hiç sorun değil. Zaman yaptığımız hazırlık sınava nerede girerseniz girin geçmenize uyarlanmış kurs seklindedir..." },
+            { name: "Klüpler bilgi", text: "Öncelikle ilginiz için teşekkürler. Almanca seviyeniz nedir acaba?" },
+            { name: "Kulüpler A1 A2", text: "Başlangıç seviyesi konuşma kulüplerimiz her pazar 17:00-18:30 arasında yapılıyor ve aylık ücreti 2000₺." },
+            { name: "Kulüpler B1 B2", text: "Orta seviye konuşma kulüplerimiz cumartesi günleri 17:00-18:30 arasında yapılıyor ve aylık ücreti 2000₺." },
+            { name: "Videolar Kulüp", text: "https://youtu.be/odMteKxaHTs?si=CWv20BS8RDzIBzLj" },
+            { name: "B2 Video", text: "https://youtu.be/DraxVYcScog?si=MOHdROZRG044iz0Q ve https://youtu.be/hMXXLIySqZM?si=_Q1h4G3zrQTQYUhw" }
+        ];
+
+        const messagesContainer = document.getElementById('messages');
+
+        messages.forEach((msg) => {
+            const messageBox = document.createElement('div');
+            messageBox.className = 'message-box';
+            messageBox.innerHTML = `<strong>${msg.name}</strong><p>${msg.text}</p>`;
+            
+            const copyButton = document.createElement('button');
+            copyButton.textContent = 'Kopyala';
+            copyButton.onclick = () => {
+                navigator.clipboard.writeText(msg.text).then(() => {
+                    alert('Mesaj kopyalandı!');
+                });
+            };
+            
+            messageBox.appendChild(copyButton);
+            messagesContainer.appendChild(messageBox);
+        });
+    </script>
+</body>
+</html>
